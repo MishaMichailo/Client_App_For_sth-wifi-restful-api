@@ -7,7 +7,6 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log('Login:', { email, password });
   };
 
