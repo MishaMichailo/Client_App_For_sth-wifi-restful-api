@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
-import axios from "axios";
+import api from "../services/api";
 import { AuthContext } from "../contexts/AuthContext";
 import { Navigate } from 'react-router-dom';
-import baseURL from "../services/api"; 
 import "../styles/LoginPage.css";
 
 const LoginPage = () => {
@@ -13,14 +12,13 @@ const LoginPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    console.log("Login:", { username, password });
 
     try {
-      const response = await axios.post(baseURL + 'auth', {
+      const response = await api.post('auth', {
         username,
         password,
       });
-      console.log(response.data);
+      console.log(response);
       login(response.data.access_token);
       setLoggedIn(true);
     } catch (error) {
