@@ -1,0 +1,26 @@
+.main-content {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card {
+    flex: 1;
+    background-color: #eaeaea;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-number {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    font-size: 8px;
+    margin-top: 10px;
+  }
