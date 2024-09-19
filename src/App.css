@@ -33,3 +33,38 @@
     transform: rotate(360deg);
   }
 }
+/* Sidebar styles */
+.sidebar {
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Cards container */
+.cards {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  margin-left: 200px; /* Space between sidebar and cards */
+}
+
+/* Individual card styles */
+.card {
+  flex: 1;
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card-number {
+  font-size: 2em;
+  margin: 0;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 0;
+}
